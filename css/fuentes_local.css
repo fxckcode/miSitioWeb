@@ -2,6 +2,10 @@ h1 {
     font-size: 3em; /* 42px */
 }
 
-p {
+.tam-font-2em {
     font-size: 2em; /* 32px */
+}
+
+.tam-font-4em {
+    font-size: 4em; /* 64px */
 }
