@@ -1,6 +1,15 @@
-h2 {
+.font-xl {
     font-size: 100px; /* Tamaño de la fuente */
-    font-weight: 500; /* Grosor de la fuente */
+}
+
+.font-bold {
+    font-weight: 900;/* Grosor de la fuente */
+}
+
+.font-italic {
     font-style: italic; /* Estilos de fuente */
+}
+
+.font-custom {
     font-family: 'Shantell Sans', cursive; /* Fuentes personalizadas */
 }
