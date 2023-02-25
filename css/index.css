@@ -5,3 +5,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.directory {
+    font-size: 2em;
+    font-family: monospace;
+    margin-left: 20px;
+}
