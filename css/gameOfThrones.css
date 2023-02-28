@@ -22,7 +22,8 @@ h1 {
     font-family: 'Cinzel';
     letter-spacing: 5px;
     font-size: 12em;
-    color: rgb(187, 185, 185);
+    color: gray;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 
