@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    flex-direction: column;
 }
 
 h1 {
@@ -19,4 +20,16 @@ h1 {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 5px;
     font-size: 18em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+a:hover {
+    color: rgb(255, 255, 255, 0.5);
 }

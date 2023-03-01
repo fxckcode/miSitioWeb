@@ -16,6 +16,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;
+    flex-direction: column;
 }
 
 h1 {
@@ -24,6 +25,18 @@ h1 {
     font-size: 12em;
     color: gray;
     text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+a:hover {
+    color: rgb(255, 255, 255, 0.5);
 }
 
 
