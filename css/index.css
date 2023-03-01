@@ -12,3 +12,9 @@ body {
     font-family: monospace;
     margin-left: 20px;
 }
+
+span {
+    width: 30%;
+    height: 1px;
+    background-color: gray;
+}
