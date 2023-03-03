@@ -23,7 +23,7 @@ h1 {
     font-family: 'Cinzel';
     letter-spacing: 5px;
     font-size: 12em;
-    color: gray;
+    color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
@@ -33,10 +33,15 @@ a {
     font-size: 1.5em;
     font-family: sans-serif;
     font-weight: 500;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 a:hover {
-    color: rgb(255, 255, 255, 0.5);
+    color: white;
+    transition: 0.5s all;
+    background-color: rgb(255, 255, 255, 0.1);
 }
 
 
