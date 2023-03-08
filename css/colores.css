@@ -1,3 +1,14 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a {
+    width: 10%;
+    text-align: center;
+}
+
 .colors {
     display: flex;
     flex-direction: row;
