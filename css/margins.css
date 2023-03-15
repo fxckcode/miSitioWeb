@@ -20,6 +20,11 @@ h1 {
     flex-direction: column;
 }
 
+.box > h1 {
+    text-align: center !important;
+    font-size: 30px;
+}
+
 .box-align {
     display: flex;
 }
@@ -43,3 +48,4 @@ h1 {
     background-color: chocolate;
     border: 10px double white;
 }
+
