@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: monospace;
+    color: black;
 }
 
 body {
@@ -15,12 +17,22 @@ body {
 
 body > h1 {
     text-align: center;
+    color: white;
+    font-size: 2em;
 }
 
 .hero {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
     flex-direction: row;
     gap: 20px;
 }
@@ -33,4 +45,23 @@ body > h1 {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    background: white;
+}
+
+.card-catalogo > .text-catalogo > * {
+    text-align: center;
+}
+
+.card-catalogo > .text-catalogo > h2 {
+    font-size: 2em;
+}
+
+.card-catalogo > .text-catalogo > p {
+    font-size: 1.5em;
+}
+
+img {
+    width: 330px;
+    height: 250px;
 }
