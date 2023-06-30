@@ -9,7 +9,7 @@ body {
     width: 100%;
     height: 100vh;
     font-family: "Poppins", sans-serif;
-    background: url(https://i.pinimg.com/originals/90/85/cf/9085cf4ff7c9195f19362eacd8fb9d1d.gif);
+    background: #202020;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,8 +18,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 30px;
+    padding: 40px;
 }
+
+li {
+    font-size: 20px;
+}
+
 
 a {
     padding: 10px;
