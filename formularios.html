@@ -8,15 +8,48 @@
     <link rel="stylesheet" href="./css/new-index.css">
 </head>
 <body>
-    <div class="content">
-        <div class="title">
-            <h2>Avianca tiquetes</h2>
-        </div>
-        <div class="form-content">
-            <form action="">
-                <label for="">Ingrese el número de documento</label>
-                <input type="number" placeholder="Número de documento">
-            </form>
+    <div class="contain">
+        <div class="content">
+            <div class="title">
+                <h2>Avianca tiquetes</h2>
+            </div>
+            <div class="form-content">
+                <form action="./portafolio.html">
+                    <label for="">Ingrese el número de documento</label>
+                    <input type="number" placeholder="Número de documento">
+                    <label for="">Ingrese el tipo de documento</label>
+                    <select name="" id="">
+                        <option value="">Selecionar...</option>
+                        <option value="">Cedula de Ciudadania</option>
+                        <option value="">Registro Civil</option>
+                        <option value="">Cedula extranjera</option>
+                    </select>
+                    <label for="">Por favor seleccione la clase</label>
+                    <div class="row">
+                        <input type="radio"> Primera clase <br>
+                    </div>
+                    <div class="row">
+                        <input type="radio"> Clase Bussiness  <br>
+                    </div>
+                    <div class="row">
+                        <input type="radio"> Clase turista <br>
+                    </div>
+                    <label for="">Por favor, selecccione el día para visualizar los vuelos disponibles</label>
+                    <div class="row">
+                        <input type="checkbox"> Miercoles, 19 de abril del 2023 <br>
+                    </div>
+                    <div class="row">
+                        <input type="checkbox"> Jueves, 20 de abril del 2023  <br>
+                    </div>
+                    <div class="row">
+                        <input type="checkbox"> Viernes, 21 de abril del 2023 <br>
+                    </div>
+                    <div class="row">
+                        <input type="checkbox"> sabado, 22 de abril del 2023 <br>
+                    </div>
+                    <button>Enviar</button>
+                </form>
+            </div>
         </div>
     </div>
 </body>
