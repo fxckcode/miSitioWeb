@@ -53,6 +53,7 @@ nav > ul > li > a:hover {
 }
 
 .hero > .card {
+    width: 55%;
     display: flex;
     padding: 20px;
     gap: 20px;
@@ -60,7 +61,38 @@ nav > ul > li > a:hover {
     border-radius: 10px;
 }
 
+@media (max-width: 1440px) {
+    .hero > .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .hero > .card {
+        width: 80%;
+    }
+
+    .hero > .card > .right > img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero > .card {
+        width: min-content;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero > .card > .left {
+        width: 100% !important;
+    }
+}
+
 .hero > .card > .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40%;
 }
 
