@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+    <link rel="stylesheet" href="./css/toggle.css">
+</head>
+
+<body>
+    <label class="switch">
+        <input type="checkbox" id="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <script>
+        var checkbox = document.querySelector("#checkbox");
+        var body = document.querySelector("body");
+        checkbox.addEventListener("click", () => {
+            if (body.style.background == "rgb(32, 32, 32)") {
+                body.style.background = "white";
+            } else {
+                body.style.background = "#202020";
+            }
+        });
+    </script>
+</body>
+
+</html>
