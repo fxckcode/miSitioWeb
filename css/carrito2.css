@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: #231F20;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+nav > img {
+    margin: 0 20px 0 10px;
+    object-fit: contain;
+}
+
+nav > .cardPais {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    object-fit: contain;    
+}
+
+nav > .cardPais > i {
+    color: white;
+}
+
+nav > .cardPais > div > p {
+    color: white;
+}
+
+nav > .cardPais > div > .enviarA {
+    font-size: 15px;
+    color: rgb(168, 168, 168) !important;
+}
+
+nav > .cardPais > div > .pais {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav > .cardPais:hover, nav > img:hover {
+    border: 2px solid white;
+    transition: .2s all linear;
+}
+
+nav > .navigation-input {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+}
+
+nav > .navigation-input > select {
+    width: 8%;
+    padding: 0 0 0 5px;
+    font-size: 16px;
+    border-radius: 10px 0 0 10px;
+}
+
+nav > .navigation-input > input {
+    width: 88%;
+    padding: 0 0 0 10px;
+    font-size: 18px;
+}
+
+nav > .navigation-input > button {
+    width: 4%;
+    background-color: #FEBD69;
+    border: none;
+    outline: none;
+    border-radius: 0 10px 10px 0;
+    font-size: 18px;
+}
+
+nav > .nav {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0 0 10px;
+}
+
+nav > .nav > .lang > select {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
