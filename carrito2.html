@@ -44,30 +44,41 @@
             </div>
         </div>
     </nav>
-    <main>
+    <div class="container">
+        <button onclick="abrirModal()">Abreme</button>
+    </div>
+    <main id="modal">
         <div class="modal">
-            <div class="close">
+            <div class="close" id="close">
                 <i class="fa-solid fa-xmark"></i>
             </div>
             <div class="content">
                 <div class="image">
-                    <img src="https://m.media-amazon.com/images/I/61hJ1tbSV2L._AC_SL1500_.jpg" alt="">
+                    <img src="https://m.media-amazon.com/images/I/61hJ1tbSV2L._AC_SL1500_.jpg" alt=""
+                        id="img_principal">
                 </div>
                 <div class="interaccion">
                     <div>
                         <p>RUNOLIM Auriculares híbridos con cancelación activa de ruido, auriculares inalámbricos
                             Bluetooth con micrófono, tiempo de reproducción de 65 horas,...</p>
-                        <span>Color: Negro</span>
+                        <span>Color: Negro -</span>
                         <div class="img-stock">
                             <img src="https://m.media-amazon.com/images/I/61hJ1tbSV2L._AC_SL1500_.jpg" alt=""
-                                class="active">
-                            <img src="https://m.media-amazon.com/images/I/51ZDGytbjdL._AC_US40_AA50_.jpg" alt="">
-                            <img src="https://m.media-amazon.com/images/I/51+0-MzA8bL._AC_US40_AA50_.jpg" alt="">
-                            <img src="https://m.media-amazon.com/images/I/415DtUoQW6L._AC_US40_AA50_.jpg" alt="">
-                            <img src="https://m.media-amazon.com/images/I/516qDmIpEbL._AC_US40_AA50_.jpg" alt="">
-                            <img src="https://m.media-amazon.com/images/I/51KkKIbpp6L._AC_US40_AA50_.jpg" alt="">
-                            <img src="https://m.media-amazon.com/images/I/51T-kJ9us6L._AC_US40_AA50_.jpg" alt="">
-                            <img src="https://m.media-amazon.com/images/I/51J8chs0p+L._AC_US40_AA50_.jpg" alt="">
+                                class="img active" id="img1">
+                            <img class="img" src="https://m.media-amazon.com/images/I/81ZG3FuAiLL._AC_SL1500_.jpg"
+                                alt="" id="img2">
+                            <img class="img" src="https://m.media-amazon.com/images/I/71VtnUkdAOL._AC_SL1500_.jpg"
+                                alt="" id="img3">
+                            <img class="img" src="https://m.media-amazon.com/images/I/6191+bd7LHL._AC_SL1500_.jpg"
+                                alt="" id="img4">
+                            <img class="img" src="https://m.media-amazon.com/images/I/81IYj8AOLsL._AC_SL1500_.jpg"
+                                alt="" id="img5">
+                            <img class="img" src="https://m.media-amazon.com/images/I/71pC+EmSjoL._AC_SL1500_.jpg"
+                                alt="" id="img6">
+                            <img class="img" src="https://m.media-amazon.com/images/I/81Xpg8pSIXL._AC_SL1500_.jpg"
+                                alt="" id="img7">
+                            <img class="img" src="https://m.media-amazon.com/images/I/71vrRaKeulL._AC_SL1500_.jpg"
+                                alt="" id="img8">
                         </div>
                     </div>
                 </div>
@@ -75,5 +86,86 @@
         </div>
     </main>
 </body>
+<script>
+    var img_principal = document.querySelector("#img_principal")
+    var img1 = document.querySelector("#img1")
+    var img2 = document.querySelector("#img2")
+    var img3 = document.querySelector("#img3")
+    var img4 = document.querySelector("#img4")
+    var img5 = document.querySelector("#img5")
+    var img6 = document.querySelector("#img6")
+    var img7 = document.querySelector("#img7")
+    var img8 = document.querySelector("#img8")
+    var btnClose = document.querySelector("#close")
+    var modal = document.querySelector("#modal")
+
+    window.onload = () => {
+        modal.classList.remove("visible")
+    }
+
+    function setActive(img) {
+        var images = document.querySelectorAll(".img");
+        images.forEach(function (image) {
+            image.classList.remove("active");
+        }); 
+        img.classList.add("active");
+    }
+
+    img1.addEventListener("click", function () {
+        img_principal.src = ''
+        img_principal.src = img1.src
+        setActive(img1)
+    })
+
+    img2.addEventListener("click", function () {
+        img_principal.src = ''
+        img_principal.src = img2.src
+        setActive(img2)
+    })
+
+    img3.addEventListener("click", function () {
+        img_principal.src = ''
+        img_principal.src = img3.src
+        setActive(img3)
+    })
+
+    img4.addEventListener("click", function () {
+        img_principal.src = ''
+        img_principal.src = img4.src
+        setActive(img4)
+    })
+
+    img5.addEventListener("click", function () {
+        img_principal.src = ''
+        img_principal.src = img5.src
+        setActive(img5)
+    })
+
+    img6.addEventListener("click", function () {
+        img_principal.src = ''
+        img_principal.src = img6.src
+        setActive(img6)
+    })
+
+    img7.addEventListener("click", function () {
+        img_principal.src = ''
+        img_principal.src = img7.src
+        setActive(img7)
+    })
+
+    img8.addEventListener("click", function () {
+        img_principal.src = ''
+        img_principal.src = img8.src
+        setActive(img8)
+    })
+
+    btnClose.addEventListener("click", function() {
+        modal.classList.remove("visible")
+    })
+
+    function abrirModal() {
+        modal.classList.add("visible")
+    }
+</script>
 
 </html>
