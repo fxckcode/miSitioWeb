@@ -256,3 +256,21 @@ main > .modal > .content > .interaccion > div > .img-stock > img:hover:not(.acti
         grid-template-rows: repeat(3, 60px);
     }
 }
+
+main > .modal > .content > .image > img {
+    --x: 50%;
+    --y: 50%;
+    transform: scale(var(--zoom));
+    transform-origin: var(--x) var(--y);
+    clip-path: inset(
+      calc((1 - 1/var(--zoom)) * (var(--y)))
+      calc((1 - 1/var(--zoom)) * (100% - var(--x)))
+      calc((1 - 1/var(--zoom)) * (100% - var(--y)))
+      calc((1 - 1/var(--zoom)) * (var(--x)))
+    );  
+    cursor: crosshair;
+  }
+  
+  main > .modal > .content > .image > img:hover {
+    --zoom:2;
+  }

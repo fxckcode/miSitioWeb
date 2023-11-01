@@ -107,7 +107,7 @@
         var images = document.querySelectorAll(".img");
         images.forEach(function (image) {
             image.classList.remove("active");
-        }); 
+        });
         img.classList.add("active");
     }
 
@@ -159,13 +159,19 @@
         setActive(img8)
     })
 
-    btnClose.addEventListener("click", function() {
+    btnClose.addEventListener("click", function () {
         modal.classList.remove("visible")
     })
 
     function abrirModal() {
         modal.classList.add("visible")
     }
+
+    img_principal.onmousemove = function (e) {
+        e.target.style.setProperty('--x', (100 * e.offsetX / e.target.offsetWidth) + '%');
+        e.target.style.setProperty('--y', (100 * e.offsetY / e.target.offsetHeight) + '%');
+    }
+
 </script>
 
 </html>
