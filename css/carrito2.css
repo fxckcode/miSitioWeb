@@ -274,3 +274,582 @@ main > .modal > .content > .image > img {
   main > .modal > .content > .image > img:hover {
     --zoom:2;
   }
+
+/*  */
+.header-country-flag {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-identificate {
+    color: white;
+
+}
+
+.header-carrito {
+    color: white;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+.fa-solid.fa-chevron-down.fa-beat {
+    font-size: 10px;
+}
+
+.txt-hola-identificate,
+.txt-devoluciones {
+    color: white;
+    font-size: .7em;
+    font-weight: 400;
+    position: relative;
+    top: 10px;
+}
+
+.txt-cuentas-listas,
+.txt-pedidos {
+    color: white;
+    font-size: 0.9em;
+    font-weight: 900;
+    position: relative;
+    top: 10px;
+}
+
+.txt-Es {
+    color: white;
+    font-size: .8em;
+    padding: 5px;
+}
+
+.carrito {
+    font-size: 1.5em;
+    position: relative;
+    right: 5px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.main_content {
+    display: none;
+}
+
+.main_content.visible {
+    display: flex;
+    position: static;
+    z-index: 10;
+}
+
+.box-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, .5);
+    z-index: 20;
+}
+
+.modal {
+    width: 94%;
+    height: 80%;
+    z-index: 30;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    display: grid;
+    grid-template: "box-video-imagenes info-modal btnClose" 40px
+        "box-main-img-modal info-modal btnClose" /
+        1fr 345px 30px;
+}
+
+.gapp {
+    width: 300px;
+    height: 50px;
+    display: grid;
+    grid-template: "optionImagenes optionVideos" /
+        110px 100px;
+    position: relative;
+}
+
+.box-main-img-modal {
+    grid-area: box-main-img-modal;
+    width: 100%;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box-img {
+    border: 2px solid rgb(119, 71, 35);
+}
+
+.img-opa {
+    opacity: 0.4;
+}
+
+.img-mini {
+    width: 80%;
+}
+
+.info-modal {
+    grid-area: info-modal;
+    padding: 30px 15px 0 30px;
+}
+
+.btnClose {
+    grid-area: btnClose;
+    position: absolute;
+    border: 3px solid rgb(44, 176, 224, 0.3);
+    border-radius: 6px;
+    font-size: 1.3em;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.box-video-imagenes {
+    font-size: 1.1em;
+}
+
+.video-imagenes {
+    cursor: pointer;
+}
+
+.option-videos {
+    position: absolute;
+    top: 15px;
+    left: 135px;
+}
+
+.option-imagenes {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.option-selected {
+    border-bottom: 2px solid #cf873f;
+}
+
+
+.calidad {
+    color: rgb(96, 96, 96);
+    font-size: .9em;
+}
+
+.article {
+    height: 60px;
+    width: 60px;
+    grid-area: article-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(158, 158, 158);
+}
+
+.article:hover {
+    border: solid 2px #244096;
+    cursor: pointer;
+}
+
+.text_descrip_product {
+    margin: 10px 0;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.primaryProducto.cerrar {
+    display: none;
+}
+
+.primaryProducto {
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+}
+
+.contentPrimaryProduct {
+    display: grid;
+    grid-template: "comentarios product" /
+        250px 1fr;
+    padding: 20px 20px 20px 5px;
+}
+
+.content_Product {
+    margin-top: 15px;
+    border: 1px solid rgb(197, 197, 197);
+}
+
+.comentarios {
+    grid-area: comentarios;
+    margin: 20px 10px;
+}
+
+.envioAmazon {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.EnvioGratis {
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.checkElegible {
+    font-size: 0.95em;
+    cursor: pointer;
+}
+
+.datos {
+    font-size: 0.95em;
+    cursor: pointer;
+}
+
+.datosEspacio {
+    cursor: pointer;
+    font-size: 0.95em;
+    margin-left: 20px;
+}
+
+.product {
+    grid-area: product;
+}
+
+.imgContent {
+    border: 1px solid rgb(197, 197, 197);
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+}
+
+.imgPrimary {
+    width: 245px;
+    height: 130px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+.content_Product {
+    display: flex;
+}
+
+.textContent {
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+.datosEstrellas,
+.TextPrice,
+.Texto {
+    margin: 10px 0;
+    font-size: 0.7em;
+}
+
+.TextoPeque {
+    font-size: 0.7em;
+    margin: 5px 0;
+}
+
+.TextBlack {
+    font-weight: 600;
+}
+
+.NumberBig {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.TextoVerde {
+    padding: 10px 0 0 0;
+    font-size: 0.75em;
+    color: #509e4f;
+}
+
+.volver {
+    grid-area: volver;
+    width: 178px;
+}
+
+.text_volverRe {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.major {
+    width: 100%;
+    background-color: white;
+}
+
+.main {
+    display: none;
+}
+
+.main.visible {
+    position: relative;
+    display: grid;
+    grid-template: "volver volver volver volver" 20px
+        "principal-container-img   principal_img_modal    principal-info-modal    aviso" /
+        70px 1fr 700px 260px;
+    margin: 10px 200px;
+}
+
+.text_descrip_modal {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.imgMini {
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 10px 10px 0;
+}
+
+.img_mini {
+    margin: 5px 15px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img_mini:hover,
+.imgMini:hover {
+    border: 2px solid rgb(33, 33, 123);
+}
+
+.active {
+    box-shadow: 0px 1px 5px 1px rgba(4,169,240,9);
+}
+
+.principal_img_modal {
+    grid-area: principal_img_modal;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal-info-modal {
+    grid-area: principal-info-modal;
+    font-family: monospace;
+    padding: 30px 20px 30px 30px;
+}
+
+.principal-info-modal>p {
+    margin: 5px 0;
+}
+
+.principal-main-img-modal {
+    width: 100%;
+    height: auto;
+    cursor: zoom-in;
+    margin-top: 50px;
+}
+.imgZoom{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0, 10px, 10px, 0)
+}
+
+.aviso_Zoom {
+    font-size: 0.8em;
+    color: rgb(58, 58, 58);
+}
+
+.principal-article {
+    height: 60px;
+    width: 60px;
+    margin: 30px;
+}
+
+.principal-article:hover {
+    border: solid 2px #244096;
+    cursor: pointer;
+    box-shadow: 10px 10px 60px rgb(76, 143, 165);
+}
+
+.text_azul_visita {
+    color: rgb(77, 175, 192);
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.text_caracteristicas {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.text_verde {
+    color: #509e4f;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.precioo {
+    padding: 10px 0;
+}
+
+.calificaciones {
+    display: flex;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.fa-star {
+    color: rgb(255, 187, 0);
+}
+
+.circle_color {
+    display: flex;
+    gap: 10px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border: 1px black solid;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgb(158, 158, 158);
+    margin: 5px 0 10px 0;
+}
+
+.circle_gray {
+    background-color: rgb(100, 100, 100);
+}
+
+.circle_white {
+    background-color: rgb(209, 209, 209);
+}
+
+.gigas {
+    margin-top: 10px;
+    width: 65px;
+    padding: 5px;
+    border: 1px solid rgb(155, 129, 11);
+}
+
+.gb {
+    font-size: 1em;
+    font-weight: 600;
+}
+.infoDescript{
+    margin-top: 10px;
+    font-size: 0.85em;
+}
+.aviso {
+    grid-area: aviso;
+    margin: 10px 20px 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px rgb(194, 194, 194) solid;
+}
+
+.principal>p {
+    margin: 10px 15px;
+    line-height: 1.4;
+}
+
+.text_vinotinto {
+    font-size: 1.1em;
+    margin: 10px;
+    color: rgba(177, 39, 4);
+}
+
+.text_rojo {
+    color: rgb(218, 9, 9);
+    font-size: 0.87em;
+}
+
+.envio {
+    display: flex;
+    margin-left: 15px;
+    gap: 5px;
+}
+
+.text_azul {
+    color: rgb(77, 175, 192);
+    font-size: 0.8em;
+}
+
+.text_negro {
+    font-size: 0.9em;
+    font-style: italic;
+    color: black;
+}
+
+.look_article {
+    width: 90%;
+    border-radius: 10px;
+    background-color: rgb(255, 217, 0);
+    color: black;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 7px;
+    margin-top: 10px;
+}
+
+.tienes_vender {
+    padding: 10px 0 3px 0;
+    font-size: 0.75em;
+}
+
+.sell {
+    cursor: pointer;
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    font-size: 0.8em;
+}
+
+.main-img-modal{
+    width: 25%;
+    object-fit: cover;
+}
+.main-img-modal {
+    --x: 50%;
+    --y: 50%;
+    transform: scale(var(--zoom));
+    transform-origin: var(--x) var(--y);
+    clip-path: inset(
+        calc((1-1/var(--zoom))*(var(--y)))
+        calc((1-1/var(--zoom))*(100% - var(--x)))
+        calc((1-1/var(--zoom))*(100% - var(--y)))
+        calc((1-1/var(--zoom))*(var(--x)))
+    );
+    cursor: zoom-in;
+}
+.main-img-modal{
+    --zoom:3;
+}
