@@ -603,7 +603,7 @@ main > .modal > .content > .image > img {
     display: grid;
     grid-template: "volver volver volver volver" 20px
         "principal-container-img   principal_img_modal    principal-info-modal    aviso" /
-        70px 1fr 700px 260px;
+        70px 1fr 500px 260px;
     margin: 10px 200px;
 }
 
