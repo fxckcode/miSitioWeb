@@ -17,64 +17,65 @@ nav {
     z-index: 1;
 }
 
-nav > img {
+nav>img {
     object-fit: contain;
 }
 
-nav > .cardPais {
+nav>.cardPais {
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    object-fit: contain;    
+    object-fit: contain;
 }
 
-nav > .cardPais > i {
+nav>.cardPais>i {
     color: white;
 }
 
-nav > .cardPais > div > p {
+nav>.cardPais>div>p {
     color: white;
 }
 
-nav > .cardPais > div > .enviarA {
+nav>.cardPais>div>.enviarA {
     font-size: 15px;
     color: rgb(168, 168, 168) !important;
 }
 
-nav > .cardPais > div > .pais {
+nav>.cardPais>div>.pais {
     font-weight: bold;
     font-size: 18px;
 }
 
-nav > .cardPais:hover, nav > img:hover,
-nav > .nav > .lang:hover {
+nav>.cardPais:hover,
+nav>img:hover,
+nav>.nav>.lang:hover {
     border: 2px solid white;
     transition: .2s all linear;
 }
 
-nav > .navigation-input {
+nav>.navigation-input {
     width: 55%;
     display: flex;
     flex-direction: row;
 }
 
-nav > .navigation-input > select {
+nav>.navigation-input>select {
     width: 90px;
     padding: 0 0 0 5px;
     font-size: 16px;
     border-radius: 10px 0 0 10px;
 }
 
-nav > .navigation-input > input {
+nav>.navigation-input>input {
     width: 88%;
     padding: 0 0 0 10px;
     font-size: 18px;
 }
 
-nav > .navigation-input > button {
+nav>.navigation-input>button {
     width: 4%;
     background-color: #FEBD69;
     border: none;
@@ -83,7 +84,7 @@ nav > .navigation-input > button {
     font-size: 18px;
 }
 
-nav > .nav {
+nav>.nav {
     width: 30%;
     display: flex;
     flex-direction: row;
@@ -93,32 +94,32 @@ nav > .nav {
     justify-content: space-around;
 }
 
-nav > .nav > .lang > select {
+nav>.nav>.lang>select {
     background-color: transparent;
     color: white;
     font-size: 20px;
 }
 
-nav > .nav > div > p {
+nav>.nav>div>p {
     font-size: 12px;
 }
 
-nav > .nav > div > p > span {
+nav>.nav>div>p>span {
     font-weight: bold;
     font-size: 15px;
 }
 
-nav > .nav > .car {
+nav>.nav>.car {
     display: flex;
     flex-direction: row;
     align-items: end;
 }
 
-nav > .nav > .car > i {
+nav>.nav>.car>i {
     font-size: 25px;
 }
 
-nav > .nav > .car > p {
+nav>.nav>.car>p {
     font-weight: bold;
     font-size: 15px;
 }
@@ -141,7 +142,7 @@ main.visible {
 }
 
 
-main > .modal {
+main>.modal {
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -153,7 +154,7 @@ main > .modal {
     background-color: white;
 }
 
-main > .modal > .close {
+main>.modal>.close {
     width: 100%;
     height: 3%;
     display: flex;
@@ -161,17 +162,17 @@ main > .modal > .close {
     justify-content: end;
 }
 
-main > .modal > .close > i {
+main>.modal>.close>i {
     padding: 20px 10px 0 0;
     font-size: 20px;
     cursor: pointer;
 }
 
-main > .modal > .close > i:hover {
+main>.modal>.close>i:hover {
     color: gray;
 }
 
-main > .modal > .content  {
+main>.modal>.content {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -179,19 +180,19 @@ main > .modal > .content  {
     padding: 0 50px;
 }
 
-main > .modal > .content > .image {
+main>.modal>.content>.image {
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center
 }
 
-main > .modal > .content > .image > img {
+main>.modal>.content>.image>img {
     width: 48%;
     object-fit: cover;
 }
 
-main > .modal > .content > .interaccion {
+main>.modal>.content>.interaccion {
     width: 20%;
     display: flex;
     justify-content: center;
@@ -200,25 +201,25 @@ main > .modal > .content > .interaccion {
     flex-direction: column;
 }
 
-main > .modal > .content > .interaccion > div {
+main>.modal>.content>.interaccion>div {
     height: 90%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-main > .modal > .content > .interaccion > div > p {
-    font-size:  18px;
+main>.modal>.content>.interaccion>div>p {
+    font-size: 18px;
     font-weight: 500;
 }
 
 
-main > .modal > .content > .interaccion > div > span {
+main>.modal>.content>.interaccion>div>span {
     color: gray;
     font-size: 12px;
 }
 
-main > .modal > .content > .interaccion > div > .img-stock {
+main>.modal>.content>.interaccion>div>.img-stock {
     display: grid;
     grid-template-columns: repeat(4, 50px);
     grid-template-rows: 50px 50px;
@@ -226,23 +227,25 @@ main > .modal > .content > .interaccion > div > .img-stock {
     gap: 20px;
 }
 
-main > .modal > .content > .interaccion > div > .img-stock > img {
+main>.modal>.content>.interaccion>div>.img-stock>img {
     width: 55px;
     height: 55px;
     padding: 3px;
     cursor: pointer;
 }
-.img{
+
+.img {
     width: 55px;
     height: 55px;
     padding: 3px;
     border: 2px solid rgb(210, 210, 210);
 }
-.active{
+
+.active {
     border: 2px #FF9002 solid;
 }
 
-main > .modal > .content > .interaccion > div > .img-stock > img:hover:not(.active) {
+main>.modal>.content>.interaccion>div>.img-stock>img:hover:not(.active) {
     border: 2px black solid;
 }
 
@@ -251,29 +254,24 @@ main > .modal > .content > .interaccion > div > .img-stock > img:hover:not(.acti
 } */
 
 @media (max-width: 1024px) {
-    main > .modal > .content > .interaccion > div > .img-stock {
+    main>.modal>.content>.interaccion>div>.img-stock {
         grid-template-columns: repeat(3, 60px);
         grid-template-rows: repeat(3, 60px);
     }
 }
 
-main > .modal > .content > .image > img {
+main>.modal>.content>.image>img {
     --x: 50%;
     --y: 50%;
     transform: scale(var(--zoom));
     transform-origin: var(--x) var(--y);
-    clip-path: inset(
-      calc((1 - 1/var(--zoom)) * (var(--y)))
-      calc((1 - 1/var(--zoom)) * (100% - var(--x)))
-      calc((1 - 1/var(--zoom)) * (100% - var(--y)))
-      calc((1 - 1/var(--zoom)) * (var(--x)))
-    );  
+    clip-path: inset(calc((1 - 1/var(--zoom)) * (var(--y))) calc((1 - 1/var(--zoom)) * (100% - var(--x))) calc((1 - 1/var(--zoom)) * (100% - var(--y))) calc((1 - 1/var(--zoom)) * (var(--x))));
     cursor: crosshair;
-  }
-  
-  main > .modal > .content > .image > img:hover {
-    --zoom:2;
-  }
+}
+
+main>.modal>.content>.image>img:hover {
+    --zoom: 2;
+}
 
 /*  */
 .header-country-flag {
@@ -636,7 +634,7 @@ main > .modal > .content > .image > img {
 }
 
 .active {
-    box-shadow: 0px 1px 5px 1px rgba(4,169,240,9);
+    box-shadow: 0px 1px 5px 1px rgba(4, 169, 240, 9);
 }
 
 .principal_img_modal {
@@ -663,7 +661,8 @@ main > .modal > .content > .image > img {
     cursor: zoom-in;
     margin-top: 50px;
 }
-.imgZoom{
+
+.imgZoom {
     position: absolute;
     overflow: hidden;
     clip: rect(0, 10px, 10px, 0)
@@ -754,10 +753,12 @@ main > .modal > .content > .image > img {
     font-size: 1em;
     font-weight: 600;
 }
-.infoDescript{
+
+.infoDescript {
     margin-top: 10px;
     font-size: 0.85em;
 }
+
 .aviso {
     grid-area: aviso;
     margin: 10px 20px 100px 0;
@@ -833,23 +834,15 @@ main > .modal > .content > .image > img {
     font-size: 0.8em;
 }
 
-.main-img-modal{
-    width: 25%;
-    object-fit: cover;
-}
-.main-img-modal {
+#img2Principal {
     --x: 50%;
     --y: 50%;
     transform: scale(var(--zoom));
     transform-origin: var(--x) var(--y);
-    clip-path: inset(
-        calc((1-1/var(--zoom))*(var(--y)))
-        calc((1-1/var(--zoom))*(100% - var(--x)))
-        calc((1-1/var(--zoom))*(100% - var(--y)))
-        calc((1-1/var(--zoom))*(var(--x)))
-    );
-    cursor: zoom-in;
+    clip-path: inset(calc((1 - 1/var(--zoom)) * (var(--y))) calc((1 - 1/var(--zoom)) * (100% - var(--x))) calc((1 - 1/var(--zoom)) * (100% - var(--y))) calc((1 - 1/var(--zoom)) * (var(--x))));
+    cursor: crosshair;
 }
-.main-img-modal{
-    --zoom:3;
+
+#img2Principal:hover {
+    --zoom: 2;
 }

@@ -375,6 +375,12 @@
     var img7_full = document.querySelector("#image7")
     var img8_full = document.querySelector("#image8")
 
+
+    img_principal_full.onmousemove = function (e) {
+        e.target.style.setProperty('--x', (100 * e.offsetX / e.target.offsetWidth) + '%');
+        e.target.style.setProperty('--y', (100 * e.offsetY / e.target.offsetHeight) + '%');
+    }
+
     function setActive_full(img) {
         var images = document.querySelectorAll(".img_mini");
         images.forEach(function (image) {
@@ -386,49 +392,49 @@
     img1_full.addEventListener("click", function () {
         img_principal_full.src = ''
         img_principal_full.src = img1_full.src
-        setActive(img1_full)
+        setActive_full(img1_full)
     })
 
     img2_full.addEventListener("click", function () {
         img_principal_full.src = ''
         img_principal_full.src = img2_full.src
-        setActive(img2_full)
+        setActive_full(img2_full)
     })
 
     img3_full.addEventListener("click", function () {
         img_principal_full.src = ''
         img_principal_full.src = img3_full.src
-        setActive(img3_full)
+        setActive_full(img3_full)
     })
 
     img4_full.addEventListener("click", function () {
         img_principal_full.src = ''
         img_principal_full.src = img4_full.src
-        setActive(img4_full)
+        setActive_full(img4_full)
     })
 
     img5_full.addEventListener("click", function () {
         img_principal_full.src = ''
         img_principal_full.src = img5_full.src
-        setActive(img5_full)
+        setActive_full(img5_full)
     })
 
     img6_full.addEventListener("click", function () {
         img_principal_full.src = ''
         img_principal_full.src = img6_full.src
-        setActive(img6_full)
+        setActive_full(img6_full)
     })
 
     img7_full.addEventListener("click", function () {
         img_principal_full.src = ''
         img_principal_full.src = img7_full.src
-        setActive(img7_full)
+        setActive_full(img7_full)
     })
 
     img8_full.addEventListener("click", function () {
         img_principal_full.src = ''
         img_principal_full.src = img8_full.src
-        setActive(img8_full)
+        setActive_full(img8_full)
     })
 
 </script>
