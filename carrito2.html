@@ -366,14 +366,14 @@
     }
 
     var img_principal_full = document.querySelector("#img2Principal")
-    var img1_full = document.querySelector("#image1")
-    var img2_full = document.querySelector("#image2")
-    var img3_full = document.querySelector("#image3")
-    var img4_full = document.querySelector("#image4")
-    var img5_full = document.querySelector("#image5")
-    var img6_full = document.querySelector("#image6")
-    var img7_full = document.querySelector("#image7")
-    var img8_full = document.querySelector("#image8")
+    var img1_full = document.getElementById("image1")
+    var img2_full = document.getElementById("image2")
+    var img3_full = document.getElementById("image3")
+    var img4_full = document.getElementById("image4")
+    var img5_full = document.getElementById("image5")
+    var img6_full = document.getElementById("image6")
+    var img7_full = document.getElementById("image7")
+    var img8_full = document.getElementById("image8")
 
 
     img_principal_full.onmousemove = function (e) {
@@ -389,53 +389,52 @@
         img.classList.add("active");
     }
 
-    img1_full.addEventListener("click", function () {
+    img1_full.onmousemove =  function () {
         img_principal_full.src = ''
         img_principal_full.src = img1_full.src
         setActive_full(img1_full)
-    })
+    }
 
-    img2_full.addEventListener("click", function () {
+    img2_full.onmousemove = function () {
         img_principal_full.src = ''
         img_principal_full.src = img2_full.src
         setActive_full(img2_full)
-    })
-
-    img3_full.addEventListener("click", function () {
+    }
+    img3_full.onmousemove = function () {
         img_principal_full.src = ''
         img_principal_full.src = img3_full.src
         setActive_full(img3_full)
-    })
+    }
 
-    img4_full.addEventListener("click", function () {
+    img4_full.onmousemove = function () {
         img_principal_full.src = ''
         img_principal_full.src = img4_full.src
         setActive_full(img4_full)
-    })
+    }
 
-    img5_full.addEventListener("click", function () {
+    img5_full.onmousemove = function () {
         img_principal_full.src = ''
         img_principal_full.src = img5_full.src
         setActive_full(img5_full)
-    })
+    }
 
-    img6_full.addEventListener("click", function () {
+    img6_full.onmousemove = function () {
         img_principal_full.src = ''
         img_principal_full.src = img6_full.src
         setActive_full(img6_full)
-    })
+    }
 
-    img7_full.addEventListener("click", function () {
+    img7_full.onmousemove = function () {
         img_principal_full.src = ''
         img_principal_full.src = img7_full.src
         setActive_full(img7_full)
-    })
+    }
 
-    img8_full.addEventListener("click", function () {
+    img8_full.onmousemove = function () {
         img_principal_full.src = ''
         img_principal_full.src = img8_full.src
         setActive_full(img8_full)
-    })
+    }
 
 </script>
 
