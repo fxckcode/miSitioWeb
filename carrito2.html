@@ -121,8 +121,8 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <label> 10</label>
+                                    <i class="fa-solid fa-star-half"></i>
+                                    <label> 4.5</label>
                                 </label><br>
                                 <p class="TextPrice">
                                     us$
@@ -178,17 +178,8 @@
                         auriculares plegables con audio HiFi, graves profundos para el hogar, viajes y oficina
                     </label>
                     <p class="text_azul_visita">Visita la tienda de Amazon Reneweb</p>
-                    <!-- <div class="calificaciones"> -->
-                    <!-- <p class="calidad">4,2
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <label class="text_azul">8 calificaciones</label>
-                        </p> -->
                     <div id="half-stars-example" style="display: flex; flex-direction: row; gap: 3px;">
-                        <p id="current-rating">2.5</p>
+                        <p id="current-rating">4.5</p>
                         <div class="rating-group">
                             <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0"
                                 value="0" type="radio">
@@ -207,8 +198,7 @@
                             <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
                             <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i
                                     class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                            <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio"
-                                checked>
+                            <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio">
                             <label aria-label="3 stars" class="rating__label" for="rating2-30"><i
                                     class="rating__icon rating__icon--star fa fa-star"></i></label>
                             <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
@@ -220,12 +210,13 @@
                             <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
                             <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i
                                     class="rating__icon rating__icon--star fa fa-star-half"></i></label>
-                            <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                            <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio"
+                                checked>
                             <label aria-label="5 stars" class="rating__label" for="rating2-50"><i
                                     class="rating__icon rating__icon--star fa fa-star"></i></label>
                             <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
                         </div>
-                        <label for="" class="text_azul">10 calificaciones</label>
+                        <label for="" class="text_azul">2,527 calificaciones</label>
                     </div>
                     <!-- </div> -->
                     <p class="text_verde">Climate Pledge Friendly</p>
@@ -451,7 +442,7 @@
     var ratingLabels = ratingGroup.querySelectorAll('.rating__label');
     var result = document.querySelector("#current-rating")
 
-    let selectedRating = 2.5;
+    let selectedRating = 4.5;
 
     ratingInputs.forEach((input) => {
         input.addEventListener('change', (event) => {
