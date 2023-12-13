@@ -178,7 +178,59 @@
                         auriculares plegables con audio HiFi, graves profundos para el hogar, viajes y oficina
                     </label>
                     <p class="text_azul_visita">Visita la tienda de Amazon Reneweb</p>
-                    <div id="half-stars-example" style="display: flex; flex-direction: row; gap: 3px;">
+                    <div id="half-stars-example" style="display: flex; flex-direction: row; gap: 3px;" class="tooltip">
+                        <div class="tooltiptext" id="tooltiptext">
+                            <div class="headtooltip">
+                                <div class="start_tooltip">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
+                                </div>
+                                <div style="font-weight: bold;">
+                                    4.5 de 5
+                                </div>
+                            </div>
+                            <p>2,527 calificaciones globales</p>
+                            <div class="tooltip_calificacion">
+                                <div class="row">
+                                    <p>5 estrellas</p>
+                                    <div class="tooltip_barra">
+                                        <div class="tooltip_barra_contenido" id="resultado_cinco"></div>
+                                    </div>
+                                    <p></p>
+                                </div>
+                                <div class="row">
+                                    <p>4 estrellas</p>
+                                    <div class="tooltip_barra">
+                                        <div class="tooltip_barra_contenido" id="resultado_cuatro"></div>
+                                    </div>
+                                    <p></p>
+                                </div>
+                                <div class="row">
+                                    <p>3 estrellas</p>
+                                    <div class="tooltip_barra">
+                                        <div class="tooltip_barra_contenido" id="resultado_tres"></div>
+                                    </div>
+                                    <p></p>
+                                </div>
+                                <div class="row">
+                                    <p>2 estrellas</p>
+                                    <div class="tooltip_barra">
+                                        <div class="tooltip_barra_contenido" id="resultado_dos"></div>
+                                    </div>
+                                    <p></p>
+                                </div>
+                                <div class="row">
+                                    <p>1 estrella</p>
+                                    <div class="tooltip_barra">
+                                        <div class="tooltip_barra_contenido" id="resultado_uno"></div>
+                                    </div>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
                         <p id="current-rating">4.5</p>
                         <div class="rating-group">
                             <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0"
@@ -494,6 +546,24 @@
             image.classList.remove("active");
         });
         img.classList.add("active");
+    }
+
+    
+    var tooltiptext = document.getElementById("tooltiptext")
+    var barra_cinco = document.querySelector("#resultado_cinco")
+    var barra_cuatro = document.querySelector("#resultado_cuatro")
+    var barra_tres = document.querySelector("#resultado_tres")
+    var barra_dos = document.querySelector("#resultado_dos")
+    var barra_uno = document.querySelector("#resultado_uno")
+    
+    ratingGroup.onmouseover = function () {
+        barra_cinco.style.transition = ".7s all linear"
+        barra_cinco.style.width = "90%"
+    }
+
+    ratingGroup.onmouseout = function() {
+        barra_cinco.style.transition = "none"
+        barra_cinco.style.width = "0%"
     }
 
     img1_full.onmousemove = function () {
